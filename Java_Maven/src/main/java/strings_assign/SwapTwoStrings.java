@@ -1,4 +1,4 @@
-package assignments.strings_assign;
+package strings_assign;
 
 public class SwapTwoStrings {
 

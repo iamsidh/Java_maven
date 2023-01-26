@@ -1,4 +1,4 @@
-package assignments.strings_assign;
+package strings_assign;
 
 import java.util.HashMap;
 import java.util.Map;
