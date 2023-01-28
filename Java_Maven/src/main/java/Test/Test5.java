@@ -21,6 +21,12 @@ public class Test5 {
 		byte b =127;
 		
 		System.out.println(s);
+		
+		//final int a =15;
+		
+		//a=16;
 	}
+	
+	
 
 }
