@@ -27,5 +27,6 @@ public class DateFormat {
     public static void main(String[] args) throws IOException {
        // datedemo();
         System.out.println("Siddhesh_"+datedemo()+"_Madgaonkar");
+        //System.out.printf("Siddhesh_%i_Madgaonkar",datedemo());
     }
 }

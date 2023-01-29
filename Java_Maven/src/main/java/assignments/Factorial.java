@@ -7,7 +7,7 @@ public class Factorial {
     public static void main(String[] args) {
         int input;
 
-        int result = 1;
+        Long result = (long) 1;
 
         Scanner sc = new Scanner(System.in);
 
