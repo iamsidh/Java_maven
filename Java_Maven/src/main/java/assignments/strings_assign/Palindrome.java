@@ -6,7 +6,7 @@ public class Palindrome {
 
     public static void main(String[] args) {
 
-        String str, reverse = "";
+        String str, reverse = null;
 
         Scanner sc = new Scanner(System.in);
 
