@@ -23,13 +23,19 @@ public class ConfigRead {
 			System.out.println("username is :" + prop.getProperty("username"));
 			System.out.println("password : " + prop.getProperty("password"));
 
+			String email = prop.getProperty("email");
+
+			System.out.println("email : " + email);
+
 		} catch (FileNotFoundException e) {
 
 			System.out.println("error file not found");
-			
+
 		} catch (IOException e) {
 
 			e.printStackTrace();
+		} finally {
+			System.out.println("Prop read completed");
 		}
 
 	}
