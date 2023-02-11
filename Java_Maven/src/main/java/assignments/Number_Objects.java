@@ -2,7 +2,8 @@ package assignments;
 public class Number_Objects
 {
     static int count=0;
-    Number_Objects()
+    
+   private Number_Objects()
     {
         count++;
     }
@@ -12,6 +13,7 @@ public class Number_Objects
         Number_Objects obj2 = new Number_Objects();
         Number_Objects obj3 = new Number_Objects();
         Number_Objects obj4 = new Number_Objects();
+        Number_Objects obj5 = new Number_Objects();
         System.out.println("Number of objects created:"+count);
     }
 }
