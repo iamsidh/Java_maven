@@ -33,6 +33,8 @@ public class DbManager {
 		} catch (Exception e) {
 
 			System.out.println("Connection to MySql server failed");
+			System.out.println(e.getMessage());
+			e.printStackTrace();
 		}
 
 	}
@@ -79,6 +81,7 @@ public class DbManager {
 			System.out.println(id+ " "+name+" "+mob);
 
 		}
+		con.close();
 		return values;
 
 	}

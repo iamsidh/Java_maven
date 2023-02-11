@@ -15,7 +15,7 @@ public class TestDatabase {
 		
 		DbManager.setUpMysqlConnection();
 		
-		List <String> queryresult = DbManager.getSqlQuery(query);
+		DbManager.getSqlQuery(query);
 		
 		
 		
