@@ -65,24 +65,33 @@ public class DbManager {
 		return PropValue;
 	}
 
-	public static List<String> getSqlQuery(String Query) throws SQLException {
+	public static void getSqlQuery(String Query) throws SQLException {
 
-		Statement st = con.createStatement();
+		try {
 
-		ResultSet res = st.executeQuery(Query);
+			Statement st = con.createStatement();
 
-		List<String> values = new ArrayList<String>();
+			ResultSet res = st.executeQuery(Query);
 
-		while (res.next()) {
-			String id = res.getString("id");
-			String name = res.getString("name");
-			String mob = res.getString("mobile");
-			
-			System.out.println(id+ " "+name+" "+mob);
+			// List<String> values = new ArrayList<String>();
 
+			System.out.println("ID" + " " + "Name" + " " + "Mobile");
+
+			while (res.next()) {
+
+				String id = res.getString("id");
+				String name = res.getString("name");
+				String mob = res.getString("mobile");
+
+				System.out.println(id + " " + name + " " + mob);
+
+			}
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			// TODO: handle exception
 		}
-		con.close();
-		return values;
+		// return values;
 
 	}
 
