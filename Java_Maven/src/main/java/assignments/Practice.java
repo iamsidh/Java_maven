@@ -26,7 +26,7 @@ public class Practice extends DateFormat {
 
         DateFormat f = new DateFormat();
 
-        System.out.println("Siddhesh_"+f.datedemo());
+        System.out.println("Siddhesh_"+DateFormat.datedemo());
 
 
     }

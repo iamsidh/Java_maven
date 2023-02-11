@@ -23,7 +23,7 @@ public class WritingFiles {
 
         //stream connectivity
 
-        File f = new File("C:\\Sidh\\filewriting\\myTextFile.txt");
+        File f = new File("D:\\Sidh\\filewriting\\myTextFile.txt");
 
         FileWriter fw = new FileWriter(f);
 
@@ -53,7 +53,7 @@ public class WritingFiles {
 
         //stream connectivity
 
-        File f = new File("C:\\Sidh\\filewriting\\myTextFile.txt");
+        File f = new File("D:\\Sidh\\filewriting\\myTextFile.txt");
 
         FileWriter fw = new FileWriter(f,true); // for appending = true
 
@@ -82,7 +82,7 @@ public class WritingFiles {
 
     public static void demoWriter3() throws IOException {   //using loops
 
-        File f = new File("C:\\Sidh\\filewriting\\myTextFile2.txt");
+        File f = new File("D:\\Sidh\\filewriting\\myTextFile2.txt");
 
         FileWriter fw = new FileWriter(f);
 
@@ -107,7 +107,7 @@ public class WritingFiles {
 
     public static void demoWriter4() throws IOException {   //using loops for csv files
 
-        File f = new File("C:\\Sidh\\filewriting\\myTextFile3.csv");
+        File f = new File("D:\\Sidh\\filewriting\\myTextFile3.csv");
 
         FileWriter fw = new FileWriter(f);
 
