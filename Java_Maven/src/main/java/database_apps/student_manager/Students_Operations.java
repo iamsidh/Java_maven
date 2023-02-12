@@ -67,10 +67,31 @@ public class Students_Operations {
 
 			int id = set.getInt(1);
 			String firstname = set.getString(2);
-			String lastname = set.getString(3);
-			
-			System.out.println(id +" | "+firstname+" | "+lastname);
+			String lastname = set.getString("last_name");
+
+			System.out.println(id + " | " + firstname + " | " + lastname);
 		}
+	}
+
+	public static boolean updateStudents(int userID, String firstname, String lastname) throws SQLException {
+		boolean flag = false;
+
+		con = DBConnection.sqlDBCon();
+
+		String q = "update students set first_name=?,last_name=? where id=? ";
+
+		pstmt = con.prepareStatement(q);
+
+		pstmt.setString(1, firstname);
+		pstmt.setString(2, lastname);
+		pstmt.setInt(3, userID);
+		
+		pstmt.executeUpdate();
+
+		flag = true;
+
+		return flag;
+
 	}
 
 }

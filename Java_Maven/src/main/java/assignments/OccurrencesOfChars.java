@@ -26,6 +26,7 @@ public class OccurrencesOfChars {
                 // If char is not present in charCountMap,
                 // putting this char to charCountMap with 1 as it's value
                 charCount.put(c, 1);
+              
             }
         }
 
