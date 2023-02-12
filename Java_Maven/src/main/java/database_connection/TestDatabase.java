@@ -1,7 +1,6 @@
 package database_connection;
 
-import java.sql.SQLException;
-import java.util.List;
+import java.sql.SQLException;;
 
 public class TestDatabase extends DbManager {
 

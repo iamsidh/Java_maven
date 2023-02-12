@@ -7,8 +7,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Properties;
 
 public class DbManager {
@@ -18,7 +16,7 @@ public class DbManager {
 	private static FileInputStream fis;
 	private static Connection con;
 
-	public static void setUpMysqlConnection() {
+	public static Connection setUpMysqlConnection() {
 
 		try {
 
@@ -36,6 +34,8 @@ public class DbManager {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
+		
+		return con;
 
 	}
 
@@ -88,8 +88,9 @@ public class DbManager {
 			}
 			con.close();
 		} catch (Exception e) {
+			
 			System.out.println(e.getMessage());
-			// TODO: handle exception
+			
 		}
 		// return values;
 
