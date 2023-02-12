@@ -39,7 +39,7 @@ public class DbManager {
 
 	}
 
-	public static String loadDatabaseConfig(String Prop) {
+	private static String loadDatabaseConfig(String Prop) {
 		String PropValue = null;
 
 		try {
