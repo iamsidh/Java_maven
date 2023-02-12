@@ -1,0 +1,3 @@
+This file has information of Teachers
+Name: Rosy Fernandes, Age: 36
+Name: Isha Mheta, Age: 29
