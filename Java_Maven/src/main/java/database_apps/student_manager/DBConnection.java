@@ -11,12 +11,14 @@ public class DBConnection {
 	public static Connection sqlDBCon() {
 
 		try {
+			
+			//Class.forName("com.mysql.jdbc.Driver");
 
 			String url = "jdbc:mysql://localhost:3306/studentmanager";
 
-			String username = "root";
+			String username = "sidh";
 
-			String password = "root";
+			String password = "iamsidh";
 
 			con = DriverManager.getConnection(url, username, password);
 
