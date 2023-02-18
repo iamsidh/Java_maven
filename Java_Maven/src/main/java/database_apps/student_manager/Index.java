@@ -97,7 +97,7 @@ public class Index {
 
 			} else {
 				System.out.println("Choice not matched");
-				sc.close();
+				//sc.close();
 				break;
 			}
 			//sc.close();
