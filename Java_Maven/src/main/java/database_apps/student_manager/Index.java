@@ -100,7 +100,7 @@ public class Index {
 				sc.close();
 				break;
 			}
-			sc.close();
+			//sc.close();
 		}
 
 	}
