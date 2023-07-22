@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 
 public class On_demand_logs {
 
-	static boolean flag = false;
+	static boolean flag = true;
 
 	public static void directoryCreator() {
 
@@ -36,7 +36,7 @@ public class On_demand_logs {
 			try {
 				FileWriter myWriter = new FileWriter("C:\\Test\\On-demand-Logs-Test\\test.log", true);
 				BufferedWriter br = new BufferedWriter(myWriter);
-				br.write("Test Log");
+				br.write("Test Log\n");
 				br.close();
 				myWriter.close();
 			} catch (IOException e) {
@@ -46,8 +46,10 @@ public class On_demand_logs {
 
 			System.out.println("Log written because flag found as :" + flag);
 
+		}else {
+			System.out.println("Logg written skipped because flag is :" + flag);
 		}
-		System.out.println("Logg written skipped because flag is :" + flag);
+
 	}
 
 }
