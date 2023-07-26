@@ -23,6 +23,16 @@ public class Prop {
 
         System.out.println(prop.getProperty("name"));
         System.out.println(prop.getProperty("salary"));
+        
+        prop.clear();
+        
+        FileInputStream fs = new FileInputStream(pcpath+"/src/main/java/config/token.txt");
+        
+        prop.load(fs);
+        
+        System.out.println(prop.getProperty("token"));
+        
+  
 
 
 
