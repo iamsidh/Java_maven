@@ -8,7 +8,12 @@ public class GetFileSize {
 
 	public static void main(String[] args) {
 		File file = new File(FILE_NAME);
-		if (!file.exists() || !file.isFile()) return;
+		if (!file.exists() || !file.isFile()) {
+			
+			System.out.println("No File Present");
+			
+			return;
+		}
 
 		System.out.println(getFileSizeBytes(file));
 		System.out.println(getFileSizeKiloBytes(file));
